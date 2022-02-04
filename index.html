@@ -5,6 +5,10 @@
 <link rel="shortcut icon" href="image/favicon.png">
 <link rel="stylesheet" href="css/estilos.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Animacion con AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--Animacion con ANIMATE.STYLE-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!--Utilice br y hr en algunos casos y se que no es lo indicado y lo mejor semanticamente. Para q sepan q no es un eror-->
 </head>
   <body>
@@ -41,7 +45,7 @@
 <!--en este mapa se encontrarian todas los inmuebles-->
         </div>
  <!--en los cuadros de busqueda queria dejarlos en blanco pero no encuentro el atributo indicado-->
-      <form class="buscador">
+      <form class="buscador"  data-aos="flip-down">
         <span>Venta</span>
           <select class="casillasBuscador" name="Venta" >
             <option value="Casas">Casas</option>
@@ -76,7 +80,7 @@
           <input class="botonBuscar" type="submit" value="Buscar">
       </form>
     <section class="videos">
-        <a href="https://www.youtube.com/channel/UCt1wVX27wVSxrRs-EG4e4uQ"><h2 class="tituloVideos">Tambien nos encontras en YouTube</h2></a>
+        <a href="https://www.youtube.com/channel/UCt1wVX27wVSxrRs-EG4e4uQ"><h2 class="animacion tituloVideos">Tambien nos encontras en YouTube</h2></a>
        <div class="visualVideos">
         <iframe class="videosInternos" src="https://www.youtube.com/embed/HMEe4Jom79Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="videosInternos" src="https://www.youtube.com/embed/bfwinxqJuEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,4 +138,8 @@
           </div> 
           <a href="Propiedades.html"><img class="qr"  src="image/descarga.jfif" width="200" height="150"></a>
     </footer>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
